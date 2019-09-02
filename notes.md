@@ -34,6 +34,24 @@ Dependencias instaladas:
 
 # Ajuda a fazer as validações dos dados
 - yarn add yup
+
+# Ajuda a trabalhar com upload de imagem
+- yarn add multer
+
+# ajuda a trabalhar com datas
+- yarn add date-fns@next
+* @next - instala a versão mais nova
+
+# conecta com o banco de dados mongo
+- yarn add mongoose
+
+
+# envio de email
+- yarn add nodemailer
+# configurar os templates de emails: handlebarsjs.com
+- yarn add express-handlebars nodemailer-express-handlebars
+
+
 ---------------------------------------------------------------------------------
 Extensões VS CODE
 
@@ -55,11 +73,19 @@ Migrations - Cria as tabelas no banco de dados
 
 Seeds - Usada para popular o banco de dados com dados testes
 
-MVC
+# Arquiterura MVC
 
 M -
 
-C - No maximo 5 metodos
+V -
+
+C - No maximo 5 metodos:
+  - index // listagem de usuarios
+  - show // exibir um único usuario
+  - store // cadastrar usuário
+  - update // alterar usuario
+  - delete // remover usuario
+
 
 ######################################
 #
@@ -74,6 +100,10 @@ C - No maximo 5 metodos
 #Sequelize
 - O Sequelize é um ORM (Object-Relational Mapper) para Node.js, que tem suporte aos bancos de dados PostgreSQL, MariaDB, MySQL, SQLite e MSSQL, como ORM ele faz o mapeamento de dados relacionais (tabelas, colunas e linhas) para objetos Javascript.
 - Ele permite criar, buscar, alterar e remover dados do banco de dados utilizando métodos JS, além de permitir a modificação da estrutura das tabelas, com isso temos muita facilidade tanto na criação, população e migração de banco de dados.
+
+#ORM
+- ORM (Object Relational Mapper) é uma técnica de mapeamento objeto relacional que permite fazer uma relação dos objetos com os dados que os mesmos representam. Ultimamente tem sido muito utilizada e vem crescendo bastante nos últimos anos.
+- Este crescimento tem se dado principalmente pelo fato de muitos desenvolvedores não se sentirem a vontade em escrever código SQL e pela produtividade que esta técnica nos proporciona. Existem ótimos ORM´s como Hibernate, NHibernate, Entity Framework e etc.
 
 #Docker
 - Esse conceito precisa ser compreendido em partes. O container é um ambiente isolado. Já o docker é uma plataforma open source na linguagem de programação Go, que possui alto desempenho e é desenvolvida diretamente no Google.

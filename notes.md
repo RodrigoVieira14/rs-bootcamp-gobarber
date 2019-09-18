@@ -51,7 +51,9 @@ Dependencias instaladas:
 # configurar os templates de emails: handlebarsjs.com
 - yarn add express-handlebars nodemailer-express-handlebars
 
-
+#bee queue or kue
+- controla os processos
+- yarn add bee-queue
 ---------------------------------------------------------------------------------
 Extensões VS CODE
 
@@ -93,7 +95,7 @@ C - No maximo 5 metodos:
 #
 ######################################
 
-
+1143,42
 #Middleware
 - São funções que tem acesso ao objeto de solicitação (req), o objeto de resposta (res), e a próxima função de middleware no ciclo solicitação-resposta do aplicativo. A próxima função middleware é comumente denotada por uma variável chamada next.
 
@@ -112,6 +114,9 @@ C - No maximo 5 metodos:
 #JWT
 - É uma string de caracteres codificados que, caso cliente e servidor estejam sob HTTPS, permite que somente o servidor que conhece o ‘segredo’ possa ler o conteúdo do token, e assim confirmar a autenticidade do cliente.
 - Ou seja, quando um usuário se autentica no sistema (com usuário e senha), o servidor gera um token com data de expiração pra ele. Durante as requisições seguintes do cliente, o JWT é enviado no cabeçalho da requisição e, caso esteja válido, a API irá permitir acesso aos recursos solicitados, sem a necessidade de se autenticar novamente.
+
+#Redis
+- banco de dados
 
 
 
